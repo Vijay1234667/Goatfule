@@ -520,6 +520,11 @@ text-align: center;
     justify-content: center;
     padding: 20px 0px 20px;
   }
+  .featured-right .featered-allimages {
+    height: 100%;
+    width: 100%;
+}
+}
 
   .featured-left{
     height: 100%;
