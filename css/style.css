@@ -21,6 +21,9 @@ body {
     transition: opacity 0.5s 0.3s ease-in-out;
 }
 
+.navbar-toggler-icon{
+  display: none;
+}
 a,
 li {
   text-decoration: none;
@@ -409,6 +412,11 @@ opacity: 1;
 
 
 @media only screen and (max-width: 767px) {
+
+  .banner-section {
+    min-height: 85vh;
+  }
+
   .banner-fuel-bottle img{
     width:33%;
   }
@@ -428,8 +436,19 @@ opacity: 1;
     padding: 10px 0px 10px;
     min-height: 100vh;
   }
+  .logo{
+    font-size: 6vw !important;
+  }
   
-  
+  .container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin:0px auto;
+    max-width: 1200px;
+  }
+  .nav-icon{
+    color: black;
+  }
   /*  */
   .tropical-section{
     padding: 20px 0px 20px;
@@ -622,7 +641,10 @@ text-align: center;
     
   }
   .side-parallax-wrapper h2{
-    font-size: 4vw;
+    font-size: 8vw;
+  }
+  .side-parallax-wrapper {
+ text-align: center;
   }
   
 }
