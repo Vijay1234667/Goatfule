@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "kajiro";
+}
+
+
+#sheryjsmain {
+  width: 100%;
+  height: 100%;
+}
+#back {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#back img {
+  width: 100%;
+  height: 100%;
+}
+#sherytop {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#workingarea {
+  width: 80%;
+  height: 700px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 1 ;
+}
+
+#hero-section {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-0%, -50%);
+  z-index: -1;
+}
+#hero-left {
+  min-width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+#hero-left #elem h1 {
+  font-family: "kajiro";
+  font-size: 100px;
+  background-image: linear-gradient(90deg, #FF3C00 7%, #CC00FF 100%);
+  font-weight:bold;
+}
+
+#hero-left #elem {
+  overflow: hidden;
+  height: 8vw;
+}
+
+#hero-right {
+  min-width: 50%;
+  color: white;
+}
+#hero-right p {
+  font-size: 20px;
+}
