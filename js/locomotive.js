@@ -10,6 +10,45 @@ element.addEventListener("mousemove", function(elem) {
   });
 });
 
+// gsap.to(".banner-main-section .fuel-bottle", {
+//   top: "220%",           
+//   left: "-2%",  
+//   width:"10%" , 
+//   scale: 1,          
+//   scrollTrigger: {
+//     trigger: ".banner-section",      
+//     scrub: true,    
+//     start: "40% 95%",   
+//     onLeave: () => gsap.set(".banner-main-section .fuel-bottle", { 
+//       position: "fixed",
+//       zIndex: 10, 
+  
+               
+//     }),
+//     onEnterBack: () => gsap.set(".banner-main-section .fuel-bottle", { 
+//       position: "absolute", 
+//       scale: 1, 
+//       zIndex: 1          
+  
+//     })
+//   }
+// });
+
+
+
+gsap.to(".banner-main-section .fuel-bottle", {
+  top: "204%",           
+  left: "0%",  
+  width: "13%", 
+  scale: 1.2,          
+  scrollTrigger: {
+    trigger: ".banner-section",      
+    scrub: 1,    
+    start: "70% 95%",
+    end: "80% 50%",
+  }
+});
+
 
 gsap.registerPlugin(ScrollTrigger);
 const tl5 = gsap.timeline({
@@ -26,25 +65,7 @@ const tl5 = gsap.timeline({
   ease: "none"
 })
 
-var tl = gsap.timeline({
-  scrollTrigger:{
-    trigger:".banner-section",
-  }
-})
 
-tl.to(".banner-section img",{
-  x:10,
-  repeat: -1,
-  yoyo: true,
-  duration: 1,  
-},"abc")
-
-tl.to(".banner-section .increasing-endurence-text",{
-  x:10,
-  repeat: -1,
-  yoyo: true,
-  duration: 1,  
-},"abc")
 
 
 gsap.to(".tropical-slider-body img", {
@@ -78,6 +99,11 @@ gsap.to(".why-choose-body span", {
     color:"#caf587",
   }
 });
+
+
+
+
+
 
 
 
